@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script src="https://unpkg.com/react@16.3.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.3.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" charset="utf-8"></script>
+    <script type="text/babel">
+      function PlayerStatus() {
+  const [status, setStatus] = React.useState("online");
+  const [counter, setCounter] = React.useState(0);
+
+  // Toggle between the two status values - 'away' and 'online'
+  function toggleStatus() {
+    // Write your code here
+    if (this.state.status === 'online') {
+        this.setState({ status: 'away'});
+    } else {
+        this.setState({ status: 'online'});
+    }
+  }
+  
+  // Implement effect hook below.
+  // Update the counter when status changes.
+  React.useEffect(() => {
+    //this.setState({ counter: this.state.counter + 1 });
+  }); 
+
+  return (
+    <div>
+      <h1>{status}</h1>
+      <h3>{counter}</h3>
+      <button onClick={toggleStatus}>Toggle status</button>
+    </div>
+  );
+};
+
+
+document.body.innerHTML = "<div id='root'></div>";
+const rootElement = document.getElementById("root");
+ReactDOM.render(<PlayerStatus />, rootElement);
+setTimeout(() => console.log(rootElement.innerHTML), 300);
+            
+            
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
