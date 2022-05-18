@@ -11,7 +11,12 @@ Dynamic couputing is quite enough
 need to build table, (hash)map?
 
 ### sqrtx
+
 Newton's method <https://en.wikipedia.org/wiki/Newton%27s_method>
+
+### remove-duplicates-from-sorted-array
+in-place algorithm => 原地弄髒舊資料也沒關係就可以用
+
 
 # 面試被問的問題
 
@@ -22,5 +27,3 @@ graph相關資料結構
 Fetch API
 
 [React] TS跟JS差別
-
-啊啊啊啊這麼老了取值還取錯啊啊啊
