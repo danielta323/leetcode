@@ -27,3 +27,13 @@ graph相關資料結構
 Fetch API
 
 [React] TS跟JS差別
+
+react primitive types
+
+react hooks
+
+redux lifecycle
+
+變數提升
+
+array 找重複 找不重複
